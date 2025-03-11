@@ -1,0 +1,22 @@
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class ModifyCityColumnInWeatherTable extends Migration
+{
+    public function up()
+    {
+        Schema::table('weather', function (Blueprint $table) {
+            // 'city' カラムにNOT NULL 制約を追加
+            $table->string('city')->nullable(false)->change();
+        });
+    }
+
+    public function down()
+    {
+        Schema::table('weather', function (Blueprint $table) {
+            // ロールバック時に元に戻す
+            $table->string('city')->nullable()->change();
+        });
+    }
+}

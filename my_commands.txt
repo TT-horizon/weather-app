@@ -1,0 +1,16 @@
+    2  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    3  touch resources/views/weather.blade.php\n
+    4  ls resources/views/\n
+    5  mkdir -p resources/views\n
+    6  touch resources/views/weather.blade.php\n
+    7  code resources/views/weather.blade.php\n
+    8  open resources/views/\n
+    9  php artisan serve\n
+   10  cd ~/weather-app\n
+   11  cd ~/weather_app\n
+   12  cd ~/weather-app\n
+   13  cd /path/to/your/laravel/project\n
+   14  open resources/views/\n
+   15  open resources/views/\n
+   16  open resources/views/\n
+   17  git add.
